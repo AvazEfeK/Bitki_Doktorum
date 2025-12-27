@@ -7,42 +7,41 @@
 
 > Görseller: `assets/screenshots/` klasöründe.
 
-### Giriş / Kimlik Doğrulama
-| Giriş Yap |
-|---|
-| ![](assets/screenshots/01_login.png) |
+<div align="center">
 
-### Analiz Ekranı
-| Foto Seçme (Kamera/Galeri) |
-|---|
-| ![](assets/screenshots/02_analyze.png) |
+<img src="assets/screenshots/01_login.png" width="240" alt="Giriş Yap" />
+<img src="assets/screenshots/02_analyze.png" width="240" alt="Analiz Ekranı" />
+<img src="assets/screenshots/05_profile.png" width="240" alt="Profil" />
 
-### Analiz Sonucu + Sohbet (Aynı bağlam)
-| Analiz Sonucu + Sohbet | Uzun Sonuç Görünümü |
-|---|---|
-| ![](assets/screenshots/03_result_chat.png) | ![](assets/screenshots/04_result_chat.png) |
+<br/><br/>
 
-### Profil
-| Profil Sayfası |
-|---|
-| ![](assets/screenshots/05_profile.png) |
+<img src="assets/screenshots/03_result_chat.png" width="240" alt="Analiz + Sohbet" />
+<img src="assets/screenshots/04_result_chat.png" width="240" alt="Uzun Sonuç" />
+
+</div>
+
+---
+
+## 🚀 Proje Özeti
+Uygulama, kullanıcıdan alınan bitki fotoğrafını analiz eder ve:
+- Bitki türü (tahmin),
+- Olası hastalık/zararlı belirtileri,
+- Kısa bakım önerileri
+şeklinde Türkçe çıktı üretir. Analiz ekranının altındaki sohbet alanında kullanıcı, **aynı analiz bağlamında** sorular sorabilir.
 
 ---
 
 ## ✨ Özellikler
 
 ### 🔍 Bitki Analizi
-- Kamera veya galeriden fotoğraf seçme
-- Gemini ile fotoğraftan:
-  - Bitki türü tahmini
-  - Olası hastalık/zararlı belirtileri
-  - Kısa bakım önerileri
+- Kamera / Galeriden fotoğraf seçme
+- Büyük Card içinde fotoğraf önizleme
 - Analiz metni **SelectableText** (kopyalanabilir)
 
 ### 💬 Analiz Bağlamında Sohbet
-- Analiz ekranında sohbet alanı
+- Analiz ekranında gömülü sohbet alanı
 - “Tam ekran sohbet” sayfası
-- **Yeni chat context oluşturmaz**: analiz bağlamını ve aynı mesaj geçmişini kullanır
+- **Yeni sohbet context’i oluşturmaz**: aynı mesaj geçmişi + aynı analiz bağlamı kullanılır
 - Sohbet tutarlılığı için en az son 6 mesaj modele aktarılır
 
 ### 🔐 Firebase Auth
@@ -54,7 +53,7 @@
   - `requires-recent-login` gelirse re-auth modal (mevcut şifre) ile tekrar dener
   - Başarılı olunca güvenlik için logout + login ekranına dönüş
 - Hesabı sil:
-  - Auth hesabı + `/users/{uid}` Firestore dokümanı silinir
+  - Auth hesabı + Firestore `/users/{uid}` dokümanı silinir
 
 ### 👤 Firestore Profil
 - Döküman yolu: `/users/{uid}`
@@ -69,7 +68,7 @@
 ### 🧯 Stabilite
 - Tüm async işlemler try/catch
 - Hatalar kullanıcıya SnackBar ile Türkçe gösterilir
-- `.env / Firebase / Gemini` gibi kurulum eksiklerinde crash yerine kontrollü uyarı yaklaşımı
+- Kurulum eksiklerinde crash yerine kullanıcı dostu uyarı yaklaşımı
 
 ---
 
