@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "506493417620",
+    "project_id": "bitkiasistan",
+    "storage_bucket": "bitkiasistan.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506493417620:android:1816e2a7c54114c875dc81",
+        "android_client_info": {
+          "package_name": "com.example.bitki_asistan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA65vFjDGG_dq9H4jgKCxhZH8LjKukdQeQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506493417620:android:680b6794e7da562275dc81",
+        "android_client_info": {
+          "package_name": "com.example.bitki_doktorum"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA65vFjDGG_dq9H4jgKCxhZH8LjKukdQeQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

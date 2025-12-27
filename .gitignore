@@ -1,0 +1,59 @@
+# =========================
+# Secrets
+# =========================
+.env
+
+# =========================
+# OS / Misc
+# =========================
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+
+# =========================
+# IDE
+# =========================
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# =========================
+# Flutter / Dart
+# =========================
+.dart_tool/
+.packages
+.pub/
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+build/
+coverage/
+
+# =========================
+# Android (Gradle / build)
+# =========================
+android/local.properties
+android/.gradle/
+android/**/build/
+
+# =========================
+# iOS (varsa)
+# =========================
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/ephemeral/
+DerivedData/
+
+# =========================
+# (Opsiyonel) Sadece Android teslim edeceksen
+# Bu klasörler gereksiz sayılabilir.
+# İstersen yorumdan çıkar.
+# =========================
+# linux/
+# macos/
+# windows/
+# web/
